@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600249293575",
+    "project_id": "big-daddy-ebdbc",
+    "storage_bucket": "big-daddy-ebdbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600249293575:android:f436fa686a2a11007983a2",
+        "android_client_info": {
+          "package_name": "com.cxzcodes.bigdaddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGRHb4dnrcOd9t81B5XEJFLBpbzrBPj2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

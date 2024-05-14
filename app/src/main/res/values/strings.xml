@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BigGame</string>
+     <string name="welcome_message">Welcome to BigGame</string>
+
+
+    <string name="case_1">15</string>
+    <string name="case_2">20</string>
+    <string name="case_3">10</string>
+    <string name="case_4">25</string>
+    <string name="case_5">45</string>
+    <string name="case_6">60</string>
+    <string name="case_7">50</string>
+    <string name="case_8">35</string>
+    <string name="case_9">5</string>
+    <string name="case_10">30</string>
+    <string name="case_11">70</string>
+    <string name="case_12">10</string>
+    <string name="case_13">25</string>
+    <string name="case_14">55</string>
+    <string name="case_15">40</string>
+    <string name="close_msg">Do you want to close this app ?</string>
+    <string name="my_coin">My Coin</string>
+    <string name="big">BIG</string>
+    <string name="game">GAME</string>
+    <string name="bg">BG</string>
+    <string name="withdraw">Withdraw</string>
+
+    <string name="facebook_app_id">462900016261253</string>
+     <string name="facebook_client_token">b09b95f1ab1405e3cf6b78e9e0b593b5</string>
+
+
+</resources>

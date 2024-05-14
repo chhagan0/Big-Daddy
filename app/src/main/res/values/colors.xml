@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_2">#808080</color>
+    <color name="gray_3">#FFD600</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ios_gray">#DCE0E1</color>
+    <color name="ios_blue">#0D77EF</color>
+    <color name="silver">#CBCDDB</color>
+
+</resources>

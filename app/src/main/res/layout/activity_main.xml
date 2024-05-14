@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_game"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spin Game"
+            android:textSize="25sp"
+            android:textColor="@color/gray_3"
+            android:fontFamily="@font/baloo"
+            android:layout_gravity="center_horizontal"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerView"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:background="@color/gray_3">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="25dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F2BC94"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:id="@+id/tcCoin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/baloo"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="22dp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="@string/my_coin"
+                            android:fontFamily="@font/baloo"
+
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_height="55dp"
+            android:textStyle="bold"
+            android:id="@+id/btnWithdraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_3"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/withdraw"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/spinWheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_spin" />
+
+            <ImageView
+                android:id="@+id/spinBtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/spin_arrow_img" />
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSpinnow"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/rl"
+            android:textStyle="bold"
+
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_3"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Spin Now"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_withdraw"
+    android:visibility="gone"
+
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_margin="5dp"
+        android:id="@+id/ivBack"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/coin"
+            />
+        <TextView
+            android:id="@+id/avCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/baloo"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Number"
+            android:layout_marginHorizontal="35dp"
+            android:id="@+id/etNumber"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Coin"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="35dp"
+            android:id="@+id/etCoin"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/gray_3"
+            android:text="WITHDRAW"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnRedeem"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
